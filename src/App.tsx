@@ -12,14 +12,43 @@ function App() {
       <Row
         title="NETFLIX ORIGUINALS"
         fetchUrl={requests.feachNetflixOriginals}
-        isLargeRow
+        isLargeRow={true}
       />
-      <Row title="Top Rated" fetchUrl={requests.feactTopRated} />
-      <Row title="Action Movies" fetchUrl={requests.feactActionMovies} />
-      <Row title="Comedy Movies" fetchUrl={requests.feactComedyMovies} />
-      <Row title="Horror Movies" fetchUrl={requests.feactHorrorMovies} />
-      <Row title="Romance Movies" fetchUrl={requests.feactRomanceMovies} />
-      <Row title="DOcumentaries" fetchUrl={requests.feactDocumentMovies} />
+      <Row
+        title="Top Rated"
+        fetchUrl={requests.feactTopRated}
+        isLargeRow={true}
+      />
+      <Row
+        title="Anime Movies"
+        fetchUrl={requests.feactAnimeMovies}
+        isLargeRow={true}
+      />
+      <Row
+        title="Comedy Movies"
+        fetchUrl={requests.feactComedyMovies}
+        isLargeRow={true}
+      />
+      <Row
+        title="Crime Movies"
+        fetchUrl={requests.feactCrimeMovies}
+        isLargeRow={true}
+      />
+      <Row
+        title="Romance Movies"
+        fetchUrl={requests.feactRomanceMovies}
+        isLargeRow={true}
+      />
+      <Row
+        title="Documentaries"
+        fetchUrl={requests.feactDocumentMovies}
+        isLargeRow={true}
+      />
+      <Row
+        title="History"
+        fetchUrl={requests.feactHistoryMovies}
+        isLargeRow={true}
+      />
     </div>
   )
 }

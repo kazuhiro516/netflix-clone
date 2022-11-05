@@ -5,6 +5,7 @@ import './Row.scss'
 // TODO: トレイラー表示
 // import movieTrailer from "movie-trailer";
 
+// サムネイル画像URL
 const base_url = 'https://image.tmdb.org/t/p/original'
 
 type Props = {
@@ -74,7 +75,7 @@ export const Row = ({ title, fetchUrl, isLargeRow }: Props) => {
 
   return (
     <div className="Row">
-      <h2>{title}</h2>
+      <h2 className="Row-title">{title}</h2>
       <div className="Row-posters">
         {movies.map((movie, _i) => (
           <img
